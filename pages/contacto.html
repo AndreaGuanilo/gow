@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God of War</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link navbar__link" href="../index.html">Origen</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navbar__link" href="./historia.html">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navbar__link" href="./juegos.html">Juegos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navbar__link" href="./armas.html">Armas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navbar__link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="section14">
+            <h2 class="section14__title">Danos tu opinión sobre el juego</h2>
+            <form class="section14__form" action="">
+                <div class="section14__form_question">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" placeholder="Escribe tu nombre" required>
+                </div>
+                <div class="section14__form_question">
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" placeholder="Escribe tu correo electrónico" required>
+                </div>
+                <div class="section14__form_question">
+                    <label for="number">Edad</label>
+                    <input type="number" id="number" placeholder="Escribe tu edad" min="14" max="99" required>
+                </div>
+                <div class="section14__form_question">
+                    <p>Escoge el juego que deseas comentar:</p>
+                    <select name="gowgames" id="gowgames" required>
+                        <option disabled selected value>Escoge el juego</option>
+                        <option value="gow2005">God of War (2005)</option>
+                        <option value="gow2007">God of War 2 (2007)</option>
+                        <option value="gow2008">God of War: Chains of Olympus (2008)</option>
+                        <option value="gow2010">God of War: Ghost of Sparta (2010)</option>
+                        <option value="gow32010">God of War 3 (2010)</option>
+                        <option value="gow2013">God of War: Ascension (2013)</option>
+                        <option value="gow2018">God of War (2018)</option>
+                        <option value="gow2022">God of War Ragnarök (2022)</option>
+                    </select>
+                </div>
+                <div class="section14__form_question">
+                    <p>Escribe tus comentarios</p>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escribe tus comentarios"></textarea>
+                </div>
+                <div class="section14__form_question">
+                    <button type="submit" id="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer__section">
+                <h3 class="footer__section_title">Adquiere tu Playstation hoy</h3>
+                <ul class="footer__section_list">
+                    <li><a href="https://www.playstation.com/es-pe/ps5/" class="footer__section_listitem">Playstation 5</a></li>
+                    <li><a href="https://www.playstation.com/es-pe/ps4/" class="footer__section_listitem">Playstation 4</a></li>
+                    <li><a href="https://www.falabella.com.pe/falabella-pe/product/122574295/Consola-Sony-Playstation-3-Super-Slim-160GB-Liberado-+-2-Mandos/122574297" class="footer__section_listitem">Playstation 3</a></li>
+                    <li><a href="https://www.amazon.com/-/es/PlayStation-Portable-PSP-Value-Pack-sony/dp/B0007TFLLC" class="footer__section_listitem">Otras consolas</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section_title">Otros juegos que pueden gustarte</h3>
+                <ul class="footer__section_list">
+                    <li><a href="https://www.ubisoft.com/es-mx/game/assassins-creed/valhalla" class="footer__section_listitem">Assassin's Creed Valhalla</a></li>
+                    <li><a href="https://www.playstation.com/es-pe/games/horizon-forbidden-west/" class="footer__section_listitem">Horizon Forbidden West</a></li>
+                    <li><a href="https://www.playstation.com/es-pe/games/the-last-of-us-part-ii/" class="footer__section_listitem">The Last of Us Part II</a></li>
+                    <li><a href="https://www.playstation.com/es-pe/games/marvels-spider-man-2/?emcid=pa-co-421947&gclid=CjwKCAjwrranBhAEEiwAzbhNtViFb3Jbrnq8sUkGVYiA4-0UPLfmbw_K-EApmisxhbawS0gewDpMTBoC9GYQAvD_BwE&gclsrc=aw.ds" class="footer__section_listitem">Marvel's Spider-Man 2</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section_title">Nuestras redes sociales</h3>
+                <ul class="footer__section_list-media">
+                    <li><a href="https://www.instagram.com/santamonicastudio/" target="_blank"><img src="../assets/img/instagram.png" alt="Instagram logo" class="media_logo"></a></li>
+                    <li><a href="https://www.facebook.com/godofwar" target="_blank"><img src="../assets/img/facebook.png" alt="Facebook logo" class="media_logo"></a></li>
+                    <li><a href="https://twitter.com/SonySantaMonica" target="_blank"><img src="../assets/img/twitter.png" alt="Twitter logo" class="media_logo"></a></li>
+                    <li><a href="https://www.youtube.com/c/SantaMonicaStudio" target="_blank"><img src="../assets/img/youtube.png" alt="Youtube logo" class="media_logo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

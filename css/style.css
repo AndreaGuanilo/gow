@@ -1,0 +1,1024 @@
+/*Importando una fuente de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@font-face {
+    font-family: gow;
+    src: url(../assets/fonts/GODOFWAR.TTF);
+}
+/* Es asterisco es el selector universal (etiqueta, class, ID) en CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Esto se debe colocar SIEMPRE en CSS. Esto reinicia los estilos que tiene por defecto el navegador*/
+/*######################## HEADER ########################*/
+nav {
+    background-color: #F2F3F4;
+}
+.navbar-nav {
+    gap: 50px;
+    margin: auto;
+}
+.navbar {
+    list-style: none;
+}
+.navbar__link {
+    text-decoration: none;
+    color: #1B1B1B;
+    font-size: 1.625rem;
+    font-family: gow;
+    font-weight: bold;
+    text-align: center;
+}
+.navbar__link:hover {
+    text-shadow: 4px 4px 5px red;
+}
+.navbar-toggler-icon {
+    background-image: url(../assets/img/gow_icon.png);
+    background-size: cover;
+}
+/*######################## FOOTER ########################*/
+.footer {
+    background-color: #00439C;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer__section {
+    margin-bottom: 10px;
+}
+.footer__section_title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F2F3F4;
+    margin: 10px auto;
+}
+.footer__section_list {
+    list-style: none;
+    overflow: auto;
+}
+.footer__section_listitem {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F2F3F4;
+    line-height: 1.6;
+}
+.footer__section_list-media {
+    list-style: none;
+    overflow: auto ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.media_logo {
+    height: 3.125rem;
+    padding: 0rem .625rem;
+}
+@media (max-width: 768px) {
+    .footer__section_title {
+        font-size: 16px;
+    }
+    .footer__section_list {
+        font-size: 14px;
+    }
+
+    .media_logo {
+        height: 30px;
+        padding: 0rem .625rem;
+    }
+}
+@media (max-width: 425px) {
+    .footer__section_title {
+        font-size: 12px;
+    }
+    .footer__section_list {
+        font-size: 10px;
+    }
+
+    .media_logo {
+        height: 20px;
+        padding: 0rem .625rem;
+    }
+}
+/*######################## INDEX - ORIGEN ########################*/
+.section1 {
+    background-image: url(../assets/img/section1_background.jpg);
+}
+.mainLogo {
+    display: block;
+    padding: 2.5rem 0px;
+    margin: auto;
+}
+.section1__title {
+    font-family: gow;
+    color: #660000;
+    font-size: 4rem;
+    text-align: center;
+    padding: .625rem 0rem;
+}
+.section1__info {
+    margin-left: 400px;
+    padding: 0px 20px 20px 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.ps_logo, .sie_logo, .sme_logo {
+    height: 125px;
+    margin: 2.5rem 0px;
+}
+.section1__text {
+    width: 1000px;
+}
+.section1__text-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    color: #1B1B1B;
+}
+@media (max-width: 768px) {
+    .section1 {
+        background-repeat: no-repeat;
+    }
+    .mainLogo {
+        width: 60%;
+    }
+    .section1__title {
+        font-size: 50px;
+    }
+    .section1__info {
+        margin: auto;
+        padding: 0px 20px 20px 20px;
+    }
+    .ps_logo, .sie_logo, .sme_logo {
+        height: 70px;
+        margin: 20px 0px;
+    }
+    .section1__text {
+        width: 800px;
+        padding: 20px;
+        background-color: rgba(220, 220, 220, 0.282);
+    }
+    .section1__text-p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 425px) {
+    .mainLogo {
+        width: 50%;
+    }
+    .section1__title {
+        font-size: 40px;
+    }
+    .ps_logo, .sie_logo, .sme_logo {
+        height: 50px;
+        margin: 20px 0px;
+    }
+    .section1__text {
+        width: 400px;
+    }
+    .section1__text-p {
+        font-size: 14px;
+    }
+}
+/*######################## HISTORIA ########################*/
+.section2 {
+    background-color: #1B1B1B;
+    padding-bottom: 1px;
+}
+.section2__logo {
+    display: block;
+    margin: auto;
+    height: 15.625rem;
+}
+.section2__title {
+    font-family: gow;
+    color: #F8A20F;
+    font-size: 4rem;
+    text-align: center;
+    margin: 10px 0px;
+    padding: .625rem 0rem;
+}
+.section2__video {
+    margin: auto;
+    text-align: center;
+    padding: 10px auto 20px;
+    width: 1000px;
+}
+.iframe {
+    margin: 10px auto;
+    width: 800px;
+    height: 400px;
+}
+.section2__text-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    color: #F2F3F4;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .section2__logo {
+        height: 130px;
+        width: 100%;
+    }
+    .section2__title {
+        font-size: 50px;
+    }
+    .section2__video {
+        width: 700px;
+    }
+    .iframe {
+        width: 400px;
+        height: 200px;
+    }
+    .section2__text-p {
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+@media (max-width: 425px) {
+    .section2__title {
+        font-size: 40px;
+    }
+    .section2__video {
+        width: 300px;
+    }
+    .iframe {
+        width: 100%
+    }
+    .section2__text-p {
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+/*######################## JUEGOS - SECTION3 ########################*/
+.section3 {
+    background-image: url(../assets/img/section3_banner.jpg);
+}
+.section3__title {
+    font-family: gow;
+    color: #660000;
+    font-size: 4rem;
+    text-align: center;
+    padding: 50px 0px;
+}
+.section3__p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F2F3F4;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 25px;
+    margin-left: 30px;
+}
+.section3__list {
+    list-style: none;
+    overflow: auto ;
+    padding: 20px 50px;
+    
+}
+.section3__list_item {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F2F3F4;
+    font-size: 24px;
+    line-height: 2;
+}
+@media (max-width: 768px) {
+    .section3 {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section3__title {
+        font-size: 50px;
+    }
+    .section3__p {
+        font-size: 18px;
+    }
+    .section3__list_item {
+        font-size: 18px;
+    }
+}
+@media (max-width: 425px) {
+    .section3 {
+        background-position: center;
+    }
+    .section3__list {
+        background-color: #a9a9a942;
+    }
+    .section3__title {
+        font-size: 30px;
+    }
+    .section3__p {
+        font-size: 18px;
+    }
+    .section3__list_item {
+        font-size: 16px;
+    }
+}
+/*######################## JUEGOS - SECTION4 ########################*/
+.section4 {
+    background-color: #F2F3F4;
+}
+.game_logo {
+    display: block;
+    padding: 50px 0px;
+    margin: auto;
+    width: 700px;
+}
+.game_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+.game_picture {
+    height: 500px;
+}
+.game_text {
+    width: 750px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #1B1B1B;
+}
+.game__button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 2px;
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    background-color: #1B1B1B;
+}
+.goback {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #F2F3F4;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .game_logo {
+        width: 60%;
+    }
+    .game_info {
+        padding: 20px;
+    }
+    .game_picture {
+        height: 250px;
+    }
+    .game_text {
+        width: 400px;
+        font-size: 18px;
+    }
+    .game__button {
+        margin-top: 10px;
+        padding: 5px;
+        width: 80%;
+        height: 60px;
+    }
+    .goback {
+        font-size: 18px;
+        line-height: 1;
+    }
+}
+@media (max-width: 425px) {
+    .game_logo {
+        width: 60%;
+    }
+    .game_info {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .game_info {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .game_info-mod {
+        flex-direction: column-reverse;
+    }
+    .game_picture {
+        height: 300px;
+        margin: 10px auto 20px;
+    }
+    .game_text {
+        width: 380px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .game__button {
+        margin: auto;
+        margin-bottom: 10px;
+        padding: 5px;
+        height: 40px;
+    }
+    .goback {
+        font-size: 14px;
+        line-height: 1;
+    }
+}
+/*######################## JUEGOS - SECTION5 ########################*/
+.section5 {
+    background-color: #A9A9A9;
+}
+/*######################## JUEGOS - SECTION6 ########################*/
+.section6 {
+    background-color: #1B1B1B;
+}
+.game_text_light {
+    width: 750px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #A9A9A9;
+}
+/*######################## JUEGOS - SECTION7 ########################*/
+.section7 {
+    background-color: #F2F3F4;
+}
+/*######################## JUEGOS - SECTION8 ########################*/
+.section8 {
+    background-color: #A9A9A9;
+}
+/*######################## JUEGOS - SECTION9 ########################*/
+.section9 {
+    background-color: #1B1B1B;
+}
+@media (max-width: 768px) {
+    .game_text_light {
+        width: 400px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 425px) {
+    .game_text_light {
+        width: 380px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}
+/*######################## JUEGOS - SECTION10 ########################*/
+.section10 {
+    background-color: #F2F3F4;
+}
+/*######################## JUEGOS - SECTION11 ########################*/
+.section11 {
+    background-color: #A9A9A9;
+}
+/*######################## ARMAS - SECTION13 ########################*/
+.section13 {
+    background-color: #A9A9A9;
+    padding-bottom: 1px;
+}
+.section13__maintitle {
+    font-family: gow;
+    color: #660000;
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 64px;
+}
+.section13__title {
+    font-family: gow;
+    color: #660000;
+    font-size: 46px;
+    text-align: center;
+    padding: 30px 0px;
+}
+.section13__content {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.c1 {
+    grid-template-areas: 
+    "t1 t1 t1 t1 t1 t1 t1 t1"
+    "boc boc boc boc boa boa boa boa"
+    ;
+}
+.t1 {
+    grid-area: t1;
+}
+.boc {
+    grid-area: boc;
+}
+.boa {
+    grid-area: boa;
+}
+.c2 {
+    grid-template-areas: 
+    "t2 t2 t2 t2 t2 t2 t2 t2"
+    ". boath boath bh bh bh bh ."
+    ". boath boath bh bh bh bh ."
+    ". sod boo bh bh bh bh ."
+    ". sod boo bh bh bh bh ."
+    ;
+}
+.t2 {
+    grid-area: t2;
+}
+.boath {
+    grid-area: boath;
+}
+.bh {
+    grid-area: bh;
+    width: 400px;
+}
+.sod {
+    height: 300px;
+    grid-area: sod;
+}
+.boo {
+    height: 300px;
+    grid-area: boo;
+}
+.c3 {
+    grid-template-areas: 
+    "t3 t3 t3 t3 t3 t3 t3 t3"
+    "goz goz goz goz boch boch boch boch"
+    "goz goz goz goz boch boch boch boch"
+    "goz goz goz goz ss ss ss ss"
+    "goz goz goz goz ss ss ss ss"
+    ;
+} 
+.t3 {
+    grid-area: t3;
+}
+.boch {
+    grid-area: boch;
+}
+.ss {
+    grid-area: ss;
+}
+.goz {
+    grid-area: goz;
+}
+.c4 {
+    grid-template-areas: 
+    "t4 t4 t4 t4 t4 t4 t4 t4"
+    "boathe boathe boathe boathe aos aos aos aos"
+    ;
+}
+.t4 {
+    grid-area: t4;
+}
+.boathe {
+    grid-area: boathe;
+}
+.aos {
+    grid-area: aos;
+}
+.c5 {
+    grid-template-areas: 
+    "t5 t5 t5 t5 t5 t5 t5 t5"
+    "coh coh coh coh nc nc nc nc"
+    "coh coh coh coh boe boe boe boe"
+    ;
+}
+.t5 {
+    grid-area: t5;
+}
+.boe {
+    grid-area: boe;
+    width: 600px;
+}
+.coh {
+    grid-area: coh;
+    width: 300px;
+}
+.nc {
+    grid-area: nc;
+    width: 500px;
+}
+.c6 {
+    grid-template-areas: 
+    "t6 t6 t6 t6 t6 t6 t6 t6"
+    "bc bc bc bc bc bc bc bc"
+    "t7 t7 t7 t7 t7 t7 t7 t7"
+    "la la la la gs gs gs gs"
+    "la la la la tb tb tb tb"
+
+    ;
+}
+.t6 {
+    grid-area: t6;
+}
+.bc {
+    grid-area: bc;
+    width: 600px;
+}
+.t7 {
+    grid-area: t7;
+}
+.la {
+    width: 600px;
+    grid-area: la;
+}
+.gs {
+    width: 300px;
+    grid-area: gs;
+}
+.tb {
+    width: 300px;
+    grid-area: tb;
+}
+.c8 {
+    grid-template-areas:
+    "t8 t8 t8 t8 t8 t8 t8 t8"
+    "ds ds ds ds lax lax lax lax"
+    "ds ds ds ds gsh gsh gsh gsh"
+    ;
+}
+.t8 {
+    grid-area: t8;
+}
+.lax {
+    width: 350px;
+    grid-area: lax;
+}
+.gsh {
+    width: 300px;
+    grid-area: gsh;
+}
+.ds {
+    grid-area: ds;
+    width: 200px;
+}
+@media (max-width: 768px) {
+    .section13__maintitle {
+        padding: 30x 0px;
+        font-size: 40px;
+    }
+    .section13__title {
+        font-size: 30px;
+        padding: 20px 0px;
+    }
+    .section13__content {
+        width: 90%;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .c1 {
+        grid-template-areas: 
+        "t1 t1 t1 t1"
+        "boc boc boa boa"
+        ;
+    }
+    .boc {
+        width: 80%;
+    }
+    .boa {
+        width: 80%;
+    }
+    .c2 {
+        grid-template-areas: 
+        "t2 t2 t2 t2"
+        "boath boath bh bh "
+        "boath boath bh bh"
+        "sod boo bh bh"
+        "sod boo bh bh"
+        ;
+    }
+    .boath {
+        width: 200px;
+    }
+    .bh {
+        width: 250px;
+    }
+    .sod {
+        width: 100px;
+    }
+    .boo {
+        width: 100px;
+    }
+    .c3 {
+        grid-template-areas: 
+        "t3 t3 t3 t3"
+        "goz goz boch boch"
+        "goz goz boch boch"
+        "goz goz ss ss"
+        "goz goz ss ss"
+        ;
+    } 
+    .boch {
+        width: 250px;
+    }
+    .ss {
+        width: 250px;
+    }
+    .goz {
+        width: 280px;
+    }
+    .c4 {
+        grid-template-areas: 
+        "t4 t4 t4 t4"
+        "boathe boathe aos aos"
+        ;
+    }
+    .boathe {
+        width: 250px;
+    }
+    .aos {
+        width: 250px;
+    }
+    .c5 {
+        grid-template-areas: 
+        "t5 t5 t5 t5"
+        "coh coh nc nc"
+        "coh coh boe boe"
+        ;
+    }
+    .boe {
+        width: 250px;
+    }
+    .coh {
+        width: 150px;
+    }
+    .nc {
+        width: 250px;
+    }
+    .c6 {
+        grid-template-areas: 
+        "t6 t6 t6 t6"
+        "bc bc bc bc"
+        "t7 t7 t7 t7"
+        "la la gs gs"
+        "la la tb tb"
+        ;
+    }
+    .bc {
+        width: 300px;
+    }
+    .la {
+        width: 300px;
+    }
+    .gs {
+        width: 150px;
+    }
+    .tb {
+        width: 150px;
+    }
+    .c8 {
+        grid-template-areas:
+        "t8 t8 t8 t8"
+        "ds ds lax lax"
+        "ds ds gsh gsh"
+        ;
+    }
+    .lax {
+        width: 200px;
+    }
+    .gsh {
+        width: 150px;
+    }
+    .ds {
+        width: 100px;
+    }
+}
+@media (max-width: 425px) {
+    .section13__maintitle {
+        padding: 10x 0px;
+        font-size: 40px;
+    }
+    .section13__title {
+        font-size: 30px;
+        padding: 20px 0px;
+    }
+    .section13__content {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .c1 {
+        grid-template-areas: 
+        "t1 t1"
+        "boc boa"
+        ;
+    }
+    .c2 {
+        grid-template-areas: 
+        "t2 t2 t2 t2"
+        "boath bh "
+        "boath bh"
+        "sod bh"
+        "sod bh"
+        ;
+    }
+    .boath {
+        width: 150px;
+    }
+    .bh {
+        width: 180px;
+    }
+    .sod {
+        width: 50px;
+    }
+    .boo {
+        width: 50px;
+    }
+    .c3 {
+        grid-template-areas: 
+        "t3 t3"
+        "goz boch"
+        "goz boch"
+        "goz ss"
+        "goz ss"
+        ;
+    } 
+    .boch {
+        width: 150px;
+    }
+    .ss {
+        width: 150px;
+    }
+    .goz {
+        width: 150px;
+    }
+    .c4 {
+        grid-template-areas: 
+        "t4 t4"
+        "boathe aos"
+        ;
+    }
+    .boathe {
+        width: 150px;
+    }
+    .aos {
+        width: 250px;
+    }
+    .c5 {
+        grid-template-areas: 
+        "t5 t5"
+        "coh coh"
+        "nc nc"
+        "boe boe"
+        ;
+    }
+    .boe {
+        width: 250px;
+    }
+    .coh {
+        width: 150px;
+    }
+    .nc {
+        width: 250px;
+    }
+    .c6 {
+        grid-template-areas: 
+        "t6 t6"
+        "bc bc"
+        "t7 t7"
+        "la gs"
+        "la tb"
+        ;
+    }
+    .bc {
+        width: 300px;
+    }
+    .la {
+        width: 200px;
+    }
+    .gs {
+        width: 100px;
+    }
+    .tb {
+        width: 100px;
+    }
+    .c8 {
+        grid-template-areas:
+        "t8 t8"
+        "ds lax"
+        "ds gsh"
+        ;
+    }
+    .lax {
+        width: 200px;
+    }
+    .gsh {
+        width: 150px;
+    }
+    .ds {
+        width: 100px;
+    }
+}
+/*######################## CONTACTO - SECTION14 ########################*/
+.section14 {
+    background-image: url(../assets/img/section14_banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section14__title {
+    font-family: gow;
+    color: #660000;
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 64px;
+}
+.section14__form {
+    background-color: #f8a30f6f;
+    margin: auto;
+    width: 800px;
+    padding: 35px;
+    border-radius: 10px;
+    display: block;
+}
+.section14__form_question{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #1B1B1B;
+    line-height: 1.5;
+    font-weight: bold;
+}
+label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+input, select, textarea {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    border: #1B1B1B solid 2px;
+    border-radius: 5px;
+}
+textarea {
+    min-height: 160px;
+}
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    color: inherit;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #F2F3F4;
+    line-height: 1.5;
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    background-color: #1B1B1B;
+}
+@media (max-width: 768px) {
+    .section14__title {
+        font-size: 40px;
+    }
+    .section14__form {
+        width: 600px;
+        padding: 35px;
+    }
+    .section14__form_question{
+        font-size: 20px;
+    }
+    input, select, textarea {
+        font-size: 18px;
+    }
+    button {
+        padding: 5px;
+        font-size: 18px;
+        line-height: 1;
+        height: 60px;
+    }
+}
+@media (max-width: 425px) {
+    .section14__title {
+        font-size: 40px;
+        padding: 20px 0px;
+    }
+    .section14__form {
+        width: 380px;
+        padding: 15px;
+    }
+    .section14__form_question{
+        font-size: 14px;
+    }
+    input, select, textarea {
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+        line-height: 1;
+        height: 40px;
+    }
+}
